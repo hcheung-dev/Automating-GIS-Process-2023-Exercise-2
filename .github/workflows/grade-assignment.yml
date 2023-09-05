@@ -14,6 +14,9 @@ jobs:
     name: Compute a preliminary grade
     runs-on: ubuntu-latest
     container: python:3
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
       - name: Checkout head
         uses: actions/checkout@v3
@@ -42,7 +45,7 @@ jobs:
           python .tests/grade-assignment.py >> $GITHUB_OUTPUT
 
       - name: Add a comment to the pull request
-        uses:  Automating-GIS-processes-II-2023/create-or-update-comment@v2.0.1
+        uses:  Automating-GIS-processes-II-2023/create-or-update-comment@v3.0.2
         env: ${{ fromJSON(steps.grading.outputs.FEEDBACK) }}
         with:
           issue-number: ${{ github.event.pull_request.number }}
