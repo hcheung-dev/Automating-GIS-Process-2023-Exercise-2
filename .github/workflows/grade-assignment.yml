@@ -14,9 +14,7 @@ jobs:
     name: Compute a preliminary grade
     runs-on: ubuntu-latest
     container: python:3
-    permissions:
-      issues: write
-      pull-requests: write
+    permissions: write-all
     steps:
       - name: Checkout head
         uses: actions/checkout@v3
