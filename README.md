@@ -5,7 +5,7 @@ carry out simple geometric calculations, and reproject data sets
 using [geopandas](https://geopandas.org/).
 
 
-- **Exercise 2 is due by Thursday, 17 November 2023, end of day**
+- **Exercise 2 is due by Thursday, 16 November 2023, end of day**
 
 - Don’t forget to check out the [hints for this week’s
 exercise](https://autogis-site.readthedocs.io/en/latest/lessons/lesson-2/exercise-2.html#hints)
