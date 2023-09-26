@@ -118,7 +118,7 @@ def format_feedback(student_username, points_counter):
             "No worries: until the deadline, you can submit as many new "
             "versions as you want.\n\n"
             "UH students: If you feel stuck, don’t hesitate to come to "
-            "the work sessions or post a question on Slack!"
+            "the work sessions or post a question on Discord!"
         )
 
     return body, reaction
